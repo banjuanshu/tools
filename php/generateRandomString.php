@@ -1,4 +1,8 @@
 <?php
+/**
+ * 随机生成指定长度的字符串
+ *
+ */
 
 
 function getRandomString($len, $chars=null)
