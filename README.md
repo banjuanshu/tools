@@ -12,3 +12,7 @@
 ## JS
 * [SHA1加密](./js/sha1.js)
 
+
+## Other
+
+* [校验身份证原理](./other/check_china_id.md)  
