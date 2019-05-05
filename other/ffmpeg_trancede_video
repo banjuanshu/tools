@@ -1,0 +1,49 @@
+#!/bin/bash
+
+if [[ -z "$1" ]] || [[ ! -d "$1" ]]; then  
+    echo "The directory is empty or not exist!"  
+    echo "It will use the current directory."  
+    nowdir=$(pwd)  
+else  
+    nowdir=$(cd $1; pwd)  
+fi  
+echo "$nowdir" 
+  
+# 递归函数的实现  
+function SearchCfile()  
+{  
+    cd $1  
+    #这里可以修改为判断文件类型，如.c,.java等等文件类型，修改一下grep条件就可以了  
+    #cfilelist=$(ls -l | grep "^-" | awk '{print $9}')  
+    cfilelist=$(ls -l | awk '{print $9}')  
+	pwd=$1
+	
+    for cfilename in $cfilelist  
+    do  
+		if [[ -d "$cfilename" ]];then
+			SearchCfile $cfilename
+			cd ..
+		else
+			#echo $cfilename
+			ext=${cfilename#*.}
+			if [[ "$ext" == "mp4" ]];then
+				pwd=$(pwd)
+				echo ${pwd}/${cfilename}
+
+				sfile=${pwd}/${cfilename}
+				file=`basename $cfilename .mp4`
+				#osd='/Users/bjs/Downloads/osd.png'
+				osd='/Users/bjs/Downloads/osd_1280.png'
+				ofile="${pwd}/${file}_out.mp4"
+
+				#`ffmpeg -y -i ${sfile} -i ${osd} -filter_complex "[1:v]scale=272:96[s];[0:v][s]overlay=main_w-overlay_w-10:10" -vcodec h264 -g 25 -r 25 -s 736x414 -an -f mp4 ${ofile}`
+				`ffmpeg -y -i ${sfile} -i ${osd} -filter_complex "[1:v]scale=265:118[s];[0:v][s]overlay=main_w-overlay_w-0:0" -c:v libx264 -preset slow -crf 28 -x264opts keyint=25:min-keyint=25  -r 25 -s 736*414 -c:a copy ${ofile}`
+
+
+			fi;
+		fi;
+    done;
+
+}
+
+SearchCfile $nowdir
