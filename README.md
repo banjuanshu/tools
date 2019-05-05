@@ -18,9 +18,13 @@
 * [SHA1加密](./js/sha1.js)
 
 
+## Shell
+
+* [ffmpeg对视频转码并加水印](./shell/ffmpeg_trancede_video)  
+
+
 ## Other
 
 * [校验身份证原理](./other/check_china_id.md)  
 * [Let's Encrypt 泛域名证书申请](./other/lets_encrypt_https.md)  
-* [ffmpeg对视频转码并加水印](./shell/ffmpeg_trancede_video)  
 
