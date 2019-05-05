@@ -32,8 +32,8 @@ function SearchCfile()
 
 				sfile=${pwd}/${cfilename}
 				file=`basename $cfilename .mp4`
-				#osd='/Users/bjs/Downloads/osd.png'
-				osd='/Users/bjs/Downloads/osd_1280.png'
+				#osd='/userdir/Downloads/osd.png'
+				osd='/userdir/Downloads/osd_1280.png'
 				ofile="${pwd}/${file}_out.mp4"
 
 				#`ffmpeg -y -i ${sfile} -i ${osd} -filter_complex "[1:v]scale=272:96[s];[0:v][s]overlay=main_w-overlay_w-10:10" -vcodec h264 -g 25 -r 25 -s 736x414 -an -f mp4 ${ofile}`
