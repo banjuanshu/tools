@@ -22,5 +22,5 @@
 
 * [校验身份证原理](./other/check_china_id.md)  
 * [Let's Encrypt 泛域名证书申请](./other/lets_encrypt_https.md)  
-* [ffmpeg对视频转码并加水印](./other/ffmpeg_trancede_video)  
+* [ffmpeg对视频转码并加水印](./shell/ffmpeg_trancede_video)  
 
