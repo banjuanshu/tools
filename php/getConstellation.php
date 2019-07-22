@@ -7,7 +7,7 @@
      * @param integer $day 日期 1-31
      * @return boolean|string
      */
-    public function getConstellation($month, $day)
+    function getConstellation($month, $day)
     {
         $day   = intval($day);
         $month = intval($month);
@@ -31,3 +31,7 @@
             list($start, $name) = each($signs[($month-2 < 0) ? 11 : $month-2]);
         return $name;
     }
+
+
+
+    echo getConstellation("1", 31);
