@@ -9,6 +9,11 @@
 * [与Java互通的3DES加密](./php/EncryptLib.php)
 
 
+## MacOS
+
+* [MacOS 常用配置](./macos/bash_proflie.md)
+* [MacOS 重启蓝牙脚本](./macos/resetbluetooth)
+
 ## Docker
 
 * [常用命令](./docker/common_command.md)  
