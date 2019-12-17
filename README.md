@@ -10,6 +10,7 @@
 * [在数组的某个位置插入数组](./php/insert_array.php)
 * [获取实现某接口的类](./php/getImplementingClasses.php)
 * [上周/上月/昨日时间](./php/time.php)
+* [三元运算符组合使用问题](./php/conditionError.php)
 
 
 ## MacOS
