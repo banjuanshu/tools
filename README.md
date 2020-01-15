@@ -11,6 +11,7 @@
 * [获取实现某接口的类](./php/getImplementingClasses.php)
 * [上周/上月/昨日时间](./php/time.php)
 * [三元运算符组合使用问题](./php/conditionError.php)
+* [更均匀的哈希散静方法](./php/hash.php)
 
 
 ## MacOS
