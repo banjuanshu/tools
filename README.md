@@ -3,15 +3,7 @@
 
 
 ## PHP
-* [生成指定长度的随机字符串](./php/generateRandomString.php)  
-* [判断一个数字是否为质数](./php/isPrimeNumber.php)
-* [判断一个字符串是否为JSON字符串](./php/isJson.php)
-* [与Java互通的3DES加密](./php/EncryptLib.php)
-* [在数组的某个位置插入数组](./php/insert_array.php)
-* [获取实现某接口的类](./php/getImplementingClasses.php)
-* [上周/上月/昨日时间](./php/time.php)
-* [三元运算符组合使用问题](./php/conditionError.php)
-* [更均匀的哈希散列方法](./php/hash.php)
+* [PHP常用函数](./php_common_functions.md)  
 
 
 ## MacOS
