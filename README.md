@@ -23,7 +23,6 @@
 ## Shell
 
 * [ffmpeg对视频转码并加水印](./shell/ffmpeg_trancede_video)  
-* [MacOS 重置蓝牙脚本](./macos/resetbluetooth)
 
 
 ## Other
