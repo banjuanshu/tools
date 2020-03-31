@@ -190,7 +190,7 @@ var_dump($endThisweek);
 
 ## 获取上周起始时间戳和结束时间戳
 ```php
-$beginLastweek  = mktime(0,0,0,date('m'),date('d')-date('w')+1-7,date('Y'));
+$beginLastweek  = = time() - (date('w')===0 ? 13 : date('w')+6) * 86400;;
 $endLastweek    = mktime(23,59,59,date('m'),date('d')-date('w')+7-7,date('Y'));
 
 var_dump($beginLastweek);
